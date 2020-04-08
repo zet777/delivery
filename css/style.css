@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 44px;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -14,6 +19,7 @@
   align-items: center;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .search-input {
@@ -29,14 +35,15 @@
   background-position: left 11px center;
   padding-left: 35px;
 }
-.buttons{
+
+.buttons {
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 
 .button {
   display: flex;
-  align-items:center;
+  align-items: center;
   padding: 8px 16px;
   background: #FFFFFF;
   border: 1px solid #D9D9D9;
@@ -48,13 +55,38 @@
   line-height: 24px;
 }
 
-.button-primary{
+.button-primary {
   background: #1890FF;
   border: 1px solid #1890FF;
   color: #fff;
   margin-right: 10px;
 }
 
-.button-icon{
+.button-icon {
   margin-right: 6px;
+}
+
+.promo {
+  box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+  background: #FFF1B8 url(../img/promo-image.png) no-repeat top -315px right -95px / 800px;
+  border-radius: 10px;
+  padding: 68px 70px;
+}
+
+.promo-title {
+  color: #302C34;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 46px;
+}
+
+.promo-text {
+  max-width: 538px;
+  color: #302C34;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
 }
