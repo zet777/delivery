@@ -4,10 +4,14 @@ const close = document.querySelector('.close');
 
 
 
-cartButton.addEventListener('click', function(event){
-  modal.classList.add("is-open");
-});
+cartButton.addEventListener('click', toggleModal);
+close.addEventListener('click', toggleModal);
 
-close.addEventListener('click', function(event){
-  modal.classList.remove("is-open");
-});
+
+
+
+function toggleModal(){
+  modal.classList.toggle("is-open");
+};
+
+new WOW().init();
